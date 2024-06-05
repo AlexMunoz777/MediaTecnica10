@@ -1,32 +1,49 @@
 /******************************************************************************
-
-Welcome to GDB Online.
-GDB online is an online compiler and debugger tool for C, C++, Python, Java, PHP, Ruby, Perl,
-C#, OCaml, VB, Swift, Pascal, Fortran, Haskell, Objective-C, Assembly, HTML, CSS, JS, SQLite, Prolog.
-Code, Compile, Run and Debug online from anywhere in world.
-
+Autor: Justin Muñoz
+Fecha: 05-06-2024
+Descripcioón: El Rey León: 
+    Las manadas de la Roca del Rey están compitiendo 
+    por el control de las Tierras del Reino. 
+    Pide al usuario la fuerza de al menos 5 
+    clanes diferentes y usa estructuras "si" 
+    para determinar clasificación de fuerza.
 *******************************************************************************/
 using System;
 
 class HelloWorld {
     
-  static void Main() {
+  static void Main(string[] args) {
       
     // variables
-    int nota = 0;
-    int promedio = 0;
+    int fuerza = 0;
     
-    // bienvenida a la app
-    Console.WriteLine("Bienvenido a miniApp promedio notas.");
     
-    // solicitud notas
-    for (int i = 0; i <= 3; i++) 
+    
+    Console.WriteLine("Bienvenido a miniApp para fuerza.");
+    
+    
+    for (int i = 0; i <= 4; i++ ) 
     {
-        Console.WriteLine("Docente, favor ingresar la nota " + i + ", luego presionar enter");
-        nota = nota + Int32.Parse(Console.ReadLine());
+        Console.WriteLine("\nIngrese su numero de fuerza del 1 al 5: " + i + " ,luego presionar enter");
+        fuerza =  Int32.Parse(Console.ReadLine());
+    
+    if (fuerza == 5){
+        Console.WriteLine("\nRey leon");
     }
-    promedio = nota / 4;
-    // mostrar promedio
-    Console.WriteLine("El promedio es: " + promedio);
+        if (fuerza == 4){
+        
+            Console.WriteLine("\nSimba");
+       }
+            if (fuerza == 3){
+                Console.WriteLine("\nMufasa");
+           }
+                if (fuerza == 2){
+                    Console.WriteLine("\nNala");
+               }
+                    if (fuerza == 1){
+                        Console.WriteLine("\nScar");
+    }
+    }
+    
   }
 }
